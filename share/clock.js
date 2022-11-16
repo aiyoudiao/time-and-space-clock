@@ -45,21 +45,18 @@ const isDarkDay = () => {
   const now = new Date();
   const hour = `${now.getHours()}`;
 
-  return hour > 18 || hour < 8;
+  return false;
+  hour > 18 || hour < 8;
 };
 
+const toggleColon = () => {
+  const $colon = document.querySelector("#colon");
+  $colon.classList.toggle("hidden");
+};
 const toggle = ($dom, addTheme) => {
   $dom.classList.remove("dark");
   $dom.classList.remove("light");
   $dom.classList.add(addTheme);
-};
-const toggleColon = () => {
-  const $colon = document.querySelector("#colon");
-  if (isDarkDay()) {
-    toggle($colon, showColon ? "dark" : "light");
-  } else {
-    toggle($colon, showColon ? "light" : "dark");
-  }
 };
 const toggleTheme = () => {
   const $theme = document.querySelector(".theme-container");
