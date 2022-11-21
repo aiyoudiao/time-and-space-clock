@@ -45,8 +45,7 @@ const isDarkDay = () => {
   const now = new Date();
   const hour = `${now.getHours()}`;
 
-  return false;
-  hour > 18 || hour < 8;
+  return hour > 18 || hour < 8;
 };
 
 const toggleColon = () => {
