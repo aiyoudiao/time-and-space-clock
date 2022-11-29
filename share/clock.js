@@ -45,7 +45,13 @@ const isDarkDay = () => {
   const now = new Date();
   const hour = `${now.getHours()}`;
 
-  return hour > 18 || hour < 8;
+  if (location.hash === "#dark") {
+    return true;
+  } else if (location.hash === "#light") {
+    return false;
+  } else {
+    return hour > 18 || hour < 8;
+  }
 };
 
 const toggleColon = () => {

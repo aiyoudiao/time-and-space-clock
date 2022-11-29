@@ -11,6 +11,7 @@ html {
   width: 100vw;
   height: 100vh;
   white-space: nowrap;
+  background-color: #4a4a4a;
 }
 .theme-container {
   width: 100%;
@@ -56,35 +57,21 @@ html {
   }
 }
 
-/* .theme-container.dark {
-  background: rgb(110, 123, 108);
-}
-.theme-container.light {
-  background-color: rgb(199, 237, 204);
-}
-
-.dark {
-  color: rgb(110, 123, 108);
-}
-.light {
-  color: rgb(199, 237, 204);
-} */
-
 .theme-container.dark {
-  background: rgb(38, 37, 38);
+  background: seagreen;
 }
 .theme-container.light {
-  background-color: rgb(255, 255, 255);
+  background-color: lightcoral;
 
-  background-image: url(./assets/img/guoqing.jpg);
+  /* background-image: url(./assets/img/guoqing.jpg); */
   background-size: cover;
 }
 
 .dark {
-  color: rgb(97, 97, 97);
+  color: navajowhite;
 }
 .light {
-  color: rgb(200, 200, 200);
+  color: cornsilk;
 }
 .hidden {
   visibility: hidden;
